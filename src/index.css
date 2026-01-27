@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Hero background carousel */
+@keyframes carousel {
+  0%, 33% {
+    background-image: url('/img/img1.jpeg');
+  }
+  34%, 66% {
+    background-image: url('/img/img2.jpg');
+  }
+  67%, 100% {
+    background-image: url('/img/img3.jpg');
+  }
+}
+
+.animate-carousel {
+  animation: carousel 18s infinite;
+  background-size: cover;
+  background-position: center;
+}
