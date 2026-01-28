@@ -1,0 +1,211 @@
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+import {
+  MapPinIcon,
+  PhoneIcon,
+  EnvelopeIcon,
+} from "@heroicons/react/24/outline";
+import ConsultationForm from "./ConsultationForm";
+
+export default function App() {
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const phone = e.target.phone.value;
+    const message = e.target.message.value;
+
+    window.location.href =
+      `mailto:consultant@email.com?subject=New Tax Enquiry from ${name}` +
+      `&body=Name: ${name}%0APhone: ${phone}%0AQuery: ${message}`;
+  };
+
+  const heroImages = ["/img/hero1.jpg", "/img/hero2.jpg", "/img/hero3.jpg"];
+
+  const [activeImage, setActiveImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveImage((prev) => (prev + 1) % heroImages.length);
+    }, 4000); // change image every 2 seconds
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
+
+  return (
+    <div id="Home" className="bg-slate-100 text-slate-900 font-sans">
+      {/* ================= TOP BAR ================= */}
+      {/* <div className="bg-slate-900 text-slate-200 text-sm">
+        <div className="max-w-7xl mx-auto px-6 py-2 flex justify-end gap-6">
+          <span>📍 New York, NY</span>
+          <span>📞 (123) 456-7890</span>
+        </div>
+      </div> */}
+
+      {/* ================= HERO ================= */}
+      <section className="relative min-h-[88vh] overflow-visible">
+        {/* Background image */}
+        {/* HERO IMAGE CAROUSEL */}
+        {heroImages.map((img, index) => (
+          <div
+            key={img}
+            className={`
+      absolute inset-0 bg-cover bg-left transition-opacity duration-4000
+      ${index === activeImage ? "opacity-100 z-0" : "opacity-0 -z-10"}
+    `}
+            style={{ backgroundImage: `url(${img})` }}
+          />
+        ))}
+
+        {/* Overlay */}
+        {/* BLUE OVERLAY */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/60 to-blue-900/30 z-10" />
+
+        {/* Content */}
+        <div className="relative z-20 max-w-7xl mx-auto px-6 pt-44 pb-24 grid grid-cols-1 lg:grid-cols-2 gap-20">
+          {/* LEFT TEXT */}
+          <div className="text-white flex flex-col justify-center">
+            <h1 className="text-[48px] leading-[1.2] font-semibold max-w-xl">
+              Expert Tax Consulting Services
+              <br />
+              for Your Financial Needs
+            </h1>
+
+            <p className="mt-6 text-[16px] text-blue-100 max-w-lg">
+              We provide comprehensive solutions to minimize your tax burden
+              with professional advice you can trust.
+            </p>
+
+            <div className="mt-10 flex gap-4">
+              <button className="bg-blue-600 px-7 py-3 rounded-md font-medium">
+                Enquire Now
+              </button>
+              <button className="bg-white text-blue-700 px-7 py-3 rounded-md font-medium">
+                Our Services
+              </button>
+            </div>
+          </div>
+
+          {/* RIGHT FORM */}
+          <ConsultationForm />
+        </div>
+      </section>
+      {/* ================= WHY CHOOSE US ================= */}
+      {/* ================= WHY CHOOSE US ================= */}
+      <section id="service" className="py-24 bg-slate-100">
+        <div className="max-w-[1500px] mx-auto px-4">
+          {/* Heading */}
+          <h2 className="text-3xl font-bold text-blue-800 mb-4">
+            Why Choose Us
+          </h2>
+
+          <p className="text-slate-600 max-w-4xl mb-16 leading-relaxed">
+            Our team of seasoned professionals, including{" "}
+            <strong>chartered accountants, tax consultants,</strong> and{" "}
+            <strong>legal advisors</strong>, bring deep domain expertise, a
+            proactive approach, and personalized strategies to every case.
+          </p>
+
+          {/* 6 Cards Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            {/* 01 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition">
+              <span className="text-4xl font-light text-blue-200">01</span>
+              <h4 className="font-semibold text-slate-800 mt-4 text-lg">
+                Deep Expertise
+              </h4>
+              <p className="text-sm text-slate-600 mt-3 leading-relaxed">
+                Our professionals possess in-depth knowledge of tax laws, legal
+                frameworks, and compliance standards across industries.
+              </p>
+            </div>
+
+            {/* 02 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition">
+              <span className="text-4xl font-light text-blue-200">02</span>
+              <h4 className="font-semibold text-slate-800 mt-4 text-lg">
+                Comprehensive Solutions
+              </h4>
+              <p className="text-sm text-slate-600 mt-3 leading-relaxed">
+                From registrations and filings to audits and litigation, we
+                offer complete legal and tax support under one roof.
+              </p>
+            </div>
+
+            {/* 03 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition">
+              <span className="text-4xl font-light text-blue-200">03</span>
+              <h4 className="font-semibold text-slate-800 mt-4 text-lg">
+                Client-Focused Approach
+              </h4>
+              <p className="text-sm text-slate-600 mt-3 leading-relaxed">
+                We prioritize understanding your needs and deliver tailored
+                solutions that ensure clarity and confidence.
+              </p>
+            </div>
+
+            {/* 04 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition">
+              <span className="text-4xl font-light text-blue-200">04</span>
+              <h4 className="font-semibold text-slate-800 mt-4 text-lg">
+                Startup Legal Services
+              </h4>
+              <p className="text-sm text-slate-600 mt-3 leading-relaxed">
+                Complete assistance for business structuring, agreements,
+                registrations, and intellectual property protection.
+              </p>
+            </div>
+
+            {/* 05 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition">
+              <span className="text-4xl font-light text-blue-200">05</span>
+              <h4 className="font-semibold text-slate-800 mt-4 text-lg">
+                Licensing & Regulatory Approvals
+              </h4>
+              <p className="text-sm text-slate-600 mt-3 leading-relaxed">
+                Expert handling of FSSAI, Trade License, MSME, IEC, and other
+                mandatory government approvals.
+              </p>
+            </div>
+
+            {/* 06 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition">
+              <span className="text-4xl font-light text-blue-200">06</span>
+              <h4 className="font-semibold text-slate-800 mt-4 text-lg">
+                Legal Representation & Litigation
+              </h4>
+              <p className="text-sm text-slate-600 mt-3 leading-relaxed">
+                Strong representation before tax authorities, tribunals, and
+                courts with strategic and ethical advocacy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= ABOUT ================= */}
+      <section id="about" className="py-14 bg-white">
+        <div className="max-w-[1600px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+          <div>
+            <h2 className="text-3xl font-bold mb-4">About Us</h2>
+            <p className="text-slate-600 mb-6 max-w-md">
+              Welcome to TaxoCare, your trusted partner for comprehensive tax
+              consulting services. We help individuals and businesses navigate
+              complex tax laws with ease and confidence.
+            </p>
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg">
+              Learn More About Us
+            </button>
+          </div>
+
+          <img
+            src="/img/hero2.jpg"
+            alt="Consultation"
+            className="rounded-xl shadow-xl"
+          />
+        </div>
+      </section>
+      
+    </div>
+  );
+}
