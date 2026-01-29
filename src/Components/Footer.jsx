@@ -235,13 +235,25 @@ export default function Footer() {
             </ul>
           </div>
           {/* Map */}
-          <div className="w-full h-56 rounded-lg overflow-hidden border border-slate-700">
+          <div className="relative w-full h-66 rounded-lg overflow-hidden border border-slate-700">
+            {/* CLICK OVERLAY */}
+            <a
+              href="https://www.google.com/maps?q=22.7079468,88.473587"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute inset-0 z-27"
+            >
+              <span className="sr-only">Open map</span>
+            </a>
+
+            {/* MAP */}
             <iframe
               title="TaxoCare Location"
-              src="https://www.google.com/maps?q=New%20York%20City&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.3782968227646!2d88.4710121!3d22.7079468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzI4LjYiTiA4OMKwMjgnMjQuOSJF!5e0!3m2!1sen!2sin!4v1706530000000"
               className="w-full h-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
             />
           </div>
         </div>
