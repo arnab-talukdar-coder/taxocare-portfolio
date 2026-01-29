@@ -7,7 +7,7 @@ export default function Footer() {
         {/* COLUMN 1 */}
         <div className="space-y-10">
           {" "}
-          ` `{/* BUSINESS REGISTRATION */}
+          {/* BUSINESS REGISTRATION */}
           <div>
             <h4 className="text-white font-semibold mb-3 uppercase text-sm">
               Business Registration
@@ -32,12 +32,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <a
+                  href="/partnership-registration"
+                  className="hover:text-white"
+                >
                   › Partnership Registration
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <a
+                  href="/proprietorship-registration"
+                  className="hover:text-white"
+                >
                   › Proprietorship Registration
                 </a>
               </li>
@@ -50,14 +56,14 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/gst-registration" className="hover:text-white">
                   › GST Registration
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/gst-return-filing" className="hover:text-white">
                   › GST Return Filing
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -72,29 +78,29 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/msme-registration" className="hover:text-white">
                   › MSME Registration
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/iec-registration" className="hover:text-white">
                   › IEC Code Registration
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/fssai-registration" className="hover:text-white">
                   › FSSAI Registration
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/shop-registration" className="hover:text-white">
                   › Shop Registration
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/gumasta-license" className="hover:text-white">
                   › Gumasta License
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -106,19 +112,19 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/company-annual-filing" className="hover:text-white">
                   › Company Annual Filing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/llp-annual-filing" className="hover:text-white">
                   › LLP Annual Filing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/itr-return-filing" className="hover:text-white">
                   › Income Tax Return
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -130,14 +136,14 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/trademark-registration" className="hover:text-white">
                   › Trademark Registration
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/patent-registration" className="hover:text-white">
                   › Patent Registration
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
