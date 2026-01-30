@@ -46,7 +46,7 @@ export default function FSSAIRegistration() {
         </div>
       </section>
 
-      <ConsultationForm ref={formRef} />
+      {/* <ConsultationForm ref={formRef} /> */}
     </div>
   );
 }

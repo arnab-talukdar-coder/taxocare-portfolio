@@ -66,7 +66,7 @@ export default function LLPRegistration() {
       </section>
 
       {/* ================= FORM SECTION ================= */}
-      <ConsultationForm ref={formRef} />
+      {/* <ConsultationForm ref={formRef} /> */}
 
       {/* ================= COMPLETE LLP CONTENT ================= */}
       <section className="py-24 bg-white">

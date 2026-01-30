@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Hero background carousel */
+/* ---------------- HERO BACKGROUND CAROUSEL ---------------- */
 @keyframes carousel {
   0%, 33% {
     background-image: url('/img/img1.jpeg');
@@ -17,4 +17,54 @@
   animation: carousel 18s infinite;
   background-size: cover;
   background-position: center;
+  will-change: background-image;
+}
+
+/* ---------------- GLOBAL FIX ---------------- */
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* 🔥 IMPORTANT: PUSH CONTENT BELOW FIXED NAVBAR */
+body {
+  padding-top: 60px; /* top bar + navbar height */
+}
+
+/* ---------------- NAVBAR FIX ---------------- */
+nav {
+  position: fixed;     /* guarantee no movement */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: white;
+}
+
+/* ---------------- NAVBAR LINK HOVER EFFECT ---------------- */
+.nav-link {
+  position: relative;
+  color: #475569;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #2563eb;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #2563eb;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }

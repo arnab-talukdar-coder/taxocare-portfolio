@@ -46,7 +46,7 @@ export default function IECRegistration() {
         </div>
       </section>
 
-      <ConsultationForm ref={formRef} />
+      {/* <ConsultationForm ref={formRef} /> */}
     </div>
   );
 }

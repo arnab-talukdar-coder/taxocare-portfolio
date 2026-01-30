@@ -64,7 +64,7 @@ export default function ProprietorshipRegistration() {
       </section>
 
       {/* ================= FORM SECTION ================= */}
-      <ConsultationForm ref={formRef} />
+      {/* <ConsultationForm ref={formRef} /> */}
 
       {/* ================= COMPLETE CONTENT ================= */}
       <section className="py-24 bg-white">
