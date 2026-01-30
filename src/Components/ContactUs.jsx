@@ -18,10 +18,10 @@ export default function ContactUs() {
 
           <div className="space-y-4 text-slate-700">
             <p>
-              📍 <strong>Address:</strong> New York, NY
+              📍 <strong>Address:</strong> Barasat,Kolkata
             </p>
             <p>
-              📞 <strong>Phone:</strong> (123) 456-7890
+              📞 <strong>Phone:</strong> (+91) 9883804092
             </p>
             <p>
               ✉️ <strong>Email:</strong> consultant@email.com

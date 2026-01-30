@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import aboutBg from "./assets/about.jpg";
+import aboutBg from "./assets/about.jpeg";
 import {
   MapPinIcon,
   PhoneIcon,
@@ -20,7 +20,11 @@ export default function App() {
       `&body=Name: ${name}%0APhone: ${phone}%0AQuery: ${message}`;
   };
 
-  const heroImages = ["/img/hero1.jpg", "/img/hero2.jpg", "/img/hero3.jpg"];
+  const heroImages = [
+    "/img/hero1.jpg",
+    "/img/carousel_1.PNG",
+    "/img/carousel_2.PNG",
+  ];
 
   const [activeImage, setActiveImage] = useState(0);
   const [readMore, setReadMore] = useState(false);
@@ -28,7 +32,7 @@ export default function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveImage((prev) => (prev + 1) % heroImages.length);
-    }, 4000); // change image every 2 seconds
+    }, 3000); // change image every 2 seconds
 
     return () => clearInterval(interval);
   }, [heroImages.length]);
@@ -38,7 +42,7 @@ export default function App() {
       {/* ================= TOP BAR ================= */}
 
       {/* ================= HERO ================= */}
-      <section className="relative min-h-[40vh] overflow-visible">
+      <section className="relative min-h-[20vh] overflow-visible">
         {/* ================= HERO IMAGE CAROUSEL ================= */}
         {heroImages.map((img, index) => (
           <div
@@ -77,14 +81,17 @@ export default function App() {
             </p>
 
             <div className="mt-10 flex gap-4">
-            <a
-            href="/#home From"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold"
-          >
-            Enquire Now
-          </a>
-            
-            <a href="/#service" className="bg-white text-blue-700 px-7 py-3 rounded-md font-medium">
+              <a
+                href="/#home From"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold"
+              >
+                Enquire Now
+              </a>
+
+              <a
+                href="/#footer"
+                className="bg-white text-blue-700 px-7 py-3 rounded-md font-medium"
+              >
                 Our Services
               </a>
             </div>
@@ -94,9 +101,9 @@ export default function App() {
           <div
             className="relative
     z-30
-    lg:translate-x-[300px]
-    translate-y-[80px]
-    lg:translate-y-[130px]"
+    lg:translate-x-[250px]
+    translate-y-[20px]
+    lg:translate-y-[-70px]"
           >
             <ConsultationForm />
           </div>
@@ -110,12 +117,12 @@ export default function App() {
             Why Choose Us
           </h2>
 
-          <p className="text-slate-600 max-w-4xl mb-16 leading-relaxed">
+          {/* <p className="text-slate-600 max-w-4xl mb-16 leading-relaxed">
             Our team of seasoned professionals, including{" "}
             <strong>chartered accountants, tax consultants,</strong> and{" "}
             <strong>legal advisors</strong>, bring deep domain expertise, a
             proactive approach, and personalized strategies to every case.
-          </p>
+          </p> */}
 
           {/* 6 Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
@@ -199,11 +206,11 @@ export default function App() {
         className="relative py-20 bg-no-repeat"
         style={{
           backgroundImage: `url(${aboutBg})`,
-        //  backgroundSize: "contain", // full image, no cut
+          //  backgroundSize: "contain", // full image, no cut
         }}
       >
         {/* LIGHT OVERLAY */}
-        <div className="absolute inset-0 bg-white/70 backdrop-blur-[3px]" />
+        <div className=" bg-white/70 " />
 
         {/* CONTENT */}
         <div className="relative z-10 max-w-[1650px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
@@ -248,7 +255,7 @@ export default function App() {
             <div className="absolute inset-0 rounded-xl bg-blue-600/25 blur-3xl scale-105" />
 
             <img
-              src="/img/hero2.jpg"
+              src="/img/hero2.PNG"
               alt="Consultation"
               className="
               relative z-10

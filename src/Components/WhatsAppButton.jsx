@@ -1,6 +1,6 @@
 export default function WhatsAppButton() {
-    const phoneNumber = "919999999999"; // <-- your WhatsApp number (with country code)
-    const message = "Hello, I want consultation for business registration";
+    const phoneNumber = "919883804092"; // <-- your WhatsApp number (with country code)
+    const message = "Hi TaxoCare! I came across your website and would like to know more about your tax and business services.Please help me with the details.";
   
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message

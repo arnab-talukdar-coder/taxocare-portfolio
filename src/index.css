@@ -27,7 +27,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* 🔥 IMPORTANT: PUSH CONTENT BELOW FIXED NAVBAR */
+/*  IMPORTANT: PUSH CONTENT BELOW FIXED NAVBAR */
 body {
   padding-top: 60px; /* top bar + navbar height */
 }

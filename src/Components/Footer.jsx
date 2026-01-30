@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-300">
+    <footer id="footer" className="bg-slate-900 text-slate-300">
       <div className="max-w-[1560px] mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
         {/* COLUMN 1 */}
         <div className="space-y-10">
@@ -129,6 +129,12 @@ export default function Footer() {
             </ul>
           </div>
 
+          
+        </div>
+
+        {/* COLUMN 3 */}
+        <div className="space-y-10">
+          {/* SUPPORT */}
           {/* IPR SERVICES */}
           <div>
             <h4 className="text-white font-semibold mb-3 uppercase text-sm">
@@ -147,18 +153,13 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-        </div>
-
-        {/* COLUMN 3 */}
-        <div className="space-y-10">
-          {/* SUPPORT */}
-          <div>
+          {/* <div>
             <h4 className="text-white font-semibold mb-3 uppercase text-sm">
               Support
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-white">
+                <a href="/contact" className="hover:text-white">
                   › Contact Us
                 </a>
               </li>
@@ -178,10 +179,10 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* COMPANY */}
-          <div>
+          {/* <div>
             <h4 className="text-white font-semibold mb-3 uppercase text-sm">
               Company
             </h4>
@@ -212,12 +213,8 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-
-        {/* COLUMN 4 */}
-        <div className="space-y-10">
-          {/* LEGAL */}
+          </div> */}
+           {/* LEGAL */}
           <div>
             <h4 className="text-white font-semibold mb-3 uppercase text-sm">
               Legal
@@ -240,6 +237,10 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+        </div>
+
+        {/* COLUMN 4 */}
+        <div className="space-y-10">
           {/* Map */}
           <div className="relative w-full h-66 rounded-lg overflow-hidden border border-slate-700">
             {/* CLICK OVERLAY */}
