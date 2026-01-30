@@ -67,7 +67,7 @@ export default function OPCRegistration() {
       </section>
 
       {/* ================= FORM SECTION ================= */}
-      <ConsultationForm ref={formRef} />
+      {/* <ConsultationForm ref={formRef} /> */}
 
       {/* ================= COMPLETE OPC CONTENT ================= */}
       <section className="py-24 bg-white">

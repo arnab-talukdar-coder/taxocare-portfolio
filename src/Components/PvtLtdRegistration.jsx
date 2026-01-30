@@ -66,7 +66,7 @@ export default function PvtLtdRegistration() {
       </section>
 
       {/* ================= FORM SECTION ================= */}
-      <ConsultationForm  ref={formRef}/>
+      {/* <ConsultationForm  ref={formRef}/> */}
 
       {/* ================= COMPLETE PRIVATE LTD CONTENT ================= */}
 <section className="py-24 bg-white">

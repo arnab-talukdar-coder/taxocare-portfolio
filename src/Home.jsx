@@ -15,8 +15,6 @@ export default function App() {
     const phone = e.target.phone.value;
     const message = e.target.message.value;
 
-    
-
     window.location.href =
       `mailto:consultant@email.com?subject=New Tax Enquiry from ${name}` +
       `&body=Name: ${name}%0APhone: ${phone}%0AQuery: ${message}`;
@@ -38,12 +36,6 @@ export default function App() {
   return (
     <div id="Home" className="bg-slate-100 text-slate-900 font-sans">
       {/* ================= TOP BAR ================= */}
-      {/* <div className="bg-slate-900 text-slate-200 text-sm">
-        <div className="max-w-7xl mx-auto px-6 py-2 flex justify-end gap-6">
-          <span>📍 New York, NY</span>
-          <span>📞 (123) 456-7890</span>
-        </div>
-      </div> */}
 
       {/* ================= HERO ================= */}
       <section className="relative min-h-[40vh] overflow-visible">
@@ -85,17 +77,27 @@ export default function App() {
             </p>
 
             <div className="mt-10 flex gap-4">
-              <button className="bg-blue-600 hover:bg-blue-700 px-7 py-3 rounded-md font-medium">
-                Enquire Now
-              </button>
-              <button className="bg-white text-blue-700 px-7 py-3 rounded-md font-medium">
+            <a
+            href="/#home From"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold"
+          >
+            Enquire Now
+          </a>
+            
+            <a href="/#service" className="bg-white text-blue-700 px-7 py-3 rounded-md font-medium">
                 Our Services
-              </button>
+              </a>
             </div>
           </div>
 
           {/* ================= RIGHT FORM ================= */}
-          <div className="transform lg:translate-x-[300px] lg:translate-y-[60px]">
+          <div
+            className="relative
+    z-30
+    lg:translate-x-[300px]
+    translate-y-[80px]
+    lg:translate-y-[130px]"
+          >
             <ConsultationForm />
           </div>
         </div>
@@ -193,75 +195,71 @@ export default function App() {
       </section>
 
       <section
-      id="about"
-      className="relative py-20 bg-no-repeat bg-center"
-      style={{
-        backgroundImage: `url(${aboutBg})`,
-        backgroundSize: "contain", // full image, no cut
-      }}
-    >
-      {/* LIGHT OVERLAY */}
-      <div className="absolute inset-0 bg-white/70 backdrop-blur-[3px]" />
+        id="about"
+        className="relative py-20 bg-no-repeat"
+        style={{
+          backgroundImage: `url(${aboutBg})`,
+        //  backgroundSize: "contain", // full image, no cut
+        }}
+      >
+        {/* LIGHT OVERLAY */}
+        <div className="absolute inset-0 bg-white/70 backdrop-blur-[3px]" />
 
-      {/* CONTENT */}
-      <div className="relative z-10 max-w-[1650px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
-        
-        {/* LEFT CONTENT */}
-        <div className="lg:transform lg:-translate-y-[30px]">
-          <h2 className="text-3xl font-bold mb-5 text-slate-900">
-            About Us
-          </h2>
+        {/* CONTENT */}
+        <div className="relative z-10 max-w-[1650px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+          {/* LEFT CONTENT */}
+          <div className="lg:transform lg:-translate-y-[30px]">
+            <h2 className="text-3xl font-bold mb-5 text-slate-900">About Us</h2>
 
-          <p className="text-slate-700 max-w-md leading-relaxed">
-            Welcome to <strong>TaxoCare</strong>, your trusted partner for
-            comprehensive tax consulting services. We help individuals and
-            businesses navigate complex tax laws with ease and confidence.
-          </p>
-
-          {/* READ MORE CONTENT */}
-          {readMore && (
-            <p className="text-slate-700 mt-4 max-w-md leading-relaxed">
-              Our experienced team provides expert assistance in income tax,
-              GST compliance, company registration, MSME, trademark, FSSAI,
-              and annual filings. We focus on accuracy, transparency, and
-              long-term financial success for every client.
+            <p className="text-slate-700 max-w-md leading-relaxed">
+              Welcome to <strong>TaxoCare</strong>, your trusted partner for
+              comprehensive tax consulting services. We help individuals and
+              businesses navigate complex tax laws with ease and confidence.
             </p>
-          )}
 
-          {/* BUTTONS */}
-          <div className="mt-6 flex items-center gap-5">
-            <button 
-              onClick={() => setReadMore(!readMore)}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition"
-            >
-              {readMore ? "Read Less" : "Learn More About Us"}
-            </button>
+            {/* READ MORE CONTENT */}
+            {readMore && (
+              <p className="text-slate-700 mt-4 max-w-md leading-relaxed">
+                Our experienced team provides expert assistance in income tax,
+                GST compliance, company registration, MSME, trademark, FSSAI,
+                and annual filings. We focus on accuracy, transparency, and
+                long-term financial success for every client.
+              </p>
+            )}
 
-            {/* <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">
+            {/* BUTTONS */}
+            <div className="mt-6 flex items-center gap-5">
+              <button
+                onClick={() => setReadMore(!readMore)}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition"
+              >
+                {readMore ? "Read Less" : "Learn More About Us"}
+              </button>
+
+              {/* <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition">
               Learn More About Us
             </button> */}
+            </div>
           </div>
-        </div>
 
-        {/* RIGHT IMAGE */}
-        <div className="relative">
-          {/* BLUE GLOW */}
-          <div className="absolute inset-0 rounded-xl bg-blue-600/25 blur-3xl scale-105" />
+          {/* RIGHT IMAGE */}
+          <div className="relative">
+            {/* BLUE GLOW */}
+            <div className="absolute inset-0 rounded-xl bg-blue-600/25 blur-3xl scale-105" />
 
-          <img
-            src="/img/hero2.jpg"
-            alt="Consultation"
-            className="
+            <img
+              src="/img/hero2.jpg"
+              alt="Consultation"
+              className="
               relative z-10
               rounded-xl
               shadow-[0_35px_90px_-20px_rgba(37,99,235,0.75)]
               filter contrast-110 saturate-110
             "
-          />
+            />
+          </div>
         </div>
-
-      </div>
-    </section>
+      </section>
     </div>
   );
 }

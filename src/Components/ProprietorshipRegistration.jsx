@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import ConsultationForm from "../ConsultationForm";
 
-export default function LLPRegistration() {
+export default function ProprietorshipRegistration() {
   const formRef = useRef(null);
 
   return (
@@ -12,21 +12,21 @@ export default function LLPRegistration() {
         <div className="max-w-6xl mx-auto px-6">
 
           <h2 className="text-2xl font-semibold mb-4">
-            What is LLP?
+            What is a Sole Proprietorship?
           </h2>
           <p className="text-slate-600 leading-relaxed mb-10">
-            LLP (Limited Liability Partnership) is a business structure governed
-            by the LLP Act, 2008. It combines the benefits of a partnership firm
-            with limited liability protection for partners.
+            A Sole Proprietorship is the simplest form of business where a single
+            individual owns, manages, and controls the business. There is no
+            separate legal identity between the proprietor and the business.
           </p>
 
           <h2 className="text-2xl font-semibold mb-4">
-            What is LLP Registration?
+            What is Proprietorship Registration?
           </h2>
           <p className="text-slate-600 leading-relaxed">
-            LLP Registration is the legal process of forming a Limited Liability
-            Partnership under MCA. Once registered, LLP can open a current bank
-            account and operate as a separate legal entity.
+            Proprietorship Registration is the process of obtaining basic
+            business registrations such as GST, MSME, and Shop & Establishment
+            to legally operate a sole proprietorship in India.
           </p>
 
         </div>
@@ -37,20 +37,18 @@ export default function LLPRegistration() {
         <div className="max-w-6xl mx-auto px-6">
 
           <h2 className="text-3xl font-semibold mb-6">
-            LLP Registration Fees
+            Proprietorship Registration Fees
           </h2>
 
           <p className="mb-4">
-            Pricing: <strong>₹8,999/- INR</strong> (Exclude GST | GST Credit Available)
+            Pricing: <strong>₹2,999/- INR</strong> (Exclude GST | GST Extra if Applicable)
           </p>
 
           <ul className="space-y-2 mb-8">
-            <li>✓ 2 Partners DIN + DSC</li>
-            <li>✓ Name Approval of LLP</li>
-            <li>✓ LLP Agreement Drafting</li>
-            <li>✓ Certificate of Incorporation</li>
-            <li>✓ PAN & TAN</li>
-            <li>✓ MSME Registration (Free)</li>
+            <li>✓ GST Registration (if applicable)</li>
+            <li>✓ MSME (Udyam) Registration</li>
+            <li>✓ Shop & Establishment Registration</li>
+            <li>✓ Current Account Assistance</li>
           </ul>
 
           <button
@@ -68,49 +66,48 @@ export default function LLPRegistration() {
       {/* ================= FORM SECTION ================= */}
       {/* <ConsultationForm ref={formRef} /> */}
 
-      {/* ================= COMPLETE LLP CONTENT ================= */}
+      {/* ================= COMPLETE CONTENT ================= */}
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6 space-y-24 text-slate-700 leading-relaxed">
 
           {/* INTRO */}
           <div>
             <h2 className="text-2xl font-semibold mb-4">
-              LLP Registration Online
+              Proprietorship Registration Online
             </h2>
             <p>
-              LLP Registration can be completed through the MCA portal, but it
-              requires Digital Signature attestation from a Chartered
-              Accountant, Company Secretary, or Lawyer. Hence, professional
-              assistance is mandatory for LLP incorporation in India.
+              Proprietorship Registration can be completed online with minimal
+              documentation. Since it is not governed by a separate Act, multiple
+              registrations act as proof of business existence.
             </p>
           </div>
 
           {/* PROCESS */}
           <div>
             <h2 className="text-2xl font-semibold mb-4">
-              LLP Registration Process
+              Proprietorship Registration Process
             </h2>
             <ol className="list-decimal ml-6 space-y-3">
-              <li>Apply for Digital Signature Certificate (DSC).</li>
-              <li>Apply for Designated Partner Identification Number (DPIN).</li>
-              <li>Check LLP name availability on MCA portal.</li>
-              <li>File FiLLiP Form for LLP incorporation.</li>
-              <li>Draft and file LLP Agreement.</li>
+              <li>Choose a business name.</li>
+              <li>Apply for MSME (Udyam) Registration.</li>
+              <li>Apply for GST Registration (if required).</li>
+              <li>Register under Shop & Establishment Act.</li>
+              <li>Open a current bank account.</li>
             </ol>
           </div>
 
           {/* DOCUMENTS */}
           <div>
             <h2 className="text-2xl font-semibold mb-4">
-              Documents Required for LLP Registration
+              Documents Required for Proprietorship Registration
             </h2>
 
             <h4 className="font-semibold mt-4 mb-2">
-              Partners’ Documents
+              Proprietor’s Documents
             </h4>
             <ul className="list-disc ml-6 space-y-2">
-              <li>PAN Card of Partners</li>
-              <li>Aadhaar / Passport / Driving License</li>
+              <li>PAN Card of Proprietor</li>
+              <li>Aadhaar Card</li>
               <li>Passport size photograph</li>
             </ul>
 
@@ -118,47 +115,47 @@ export default function LLPRegistration() {
               Business Address Proof
             </h4>
             <ul className="list-disc ml-6 space-y-2">
-              <li>Electricity Bill + Rent Agreement / NOC / Sale Deed</li>
+              <li>Electricity Bill / Rent Agreement / NOC</li>
             </ul>
           </div>
 
           {/* BENEFITS */}
           <div>
             <h2 className="text-2xl font-semibold mb-4">
-              Benefits of LLP Registration
+              Benefits of Proprietorship Registration
             </h2>
             <ul className="list-disc ml-6 space-y-2">
-              <li>Limited liability protection for partners</li>
-              <li>No minimum capital requirement</li>
-              <li>Lower compliance compared to companies</li>
-              <li>Separate legal entity</li>
-              <li>Suitable for professionals & startups</li>
+              <li>Easy and fast to start</li>
+              <li>Lowest compliance cost</li>
+              <li>Complete control with proprietor</li>
+              <li>Ideal for freelancers & small traders</li>
+              <li>Minimal legal formalities</li>
             </ul>
           </div>
 
           {/* TIME */}
           <div>
             <h2 className="text-2xl font-semibold mb-4">
-              Time Required for LLP Registration
+              Time Required for Proprietorship Registration
             </h2>
             <p>
-              LLP Registration generally takes
-              <strong> 7–12 working days</strong>, depending on document
-              verification and MCA approval.
+              Proprietorship Registration generally takes
+              <strong> 2–5 working days</strong>, depending on registrations
+              selected and document verification.
             </p>
           </div>
 
           {/* FAQ */}
           <div>
             <h2 className="text-2xl font-semibold mb-6">
-              FAQ on LLP Registration
+              FAQ on Proprietorship Registration
             </h2>
             <ul className="space-y-2">
-              <li>✔ Minimum 2 partners required</li>
-              <li>✔ Residential address allowed</li>
+              <li>✔ Only one owner allowed</li>
+              <li>✔ No separate legal entity</li>
               <li>✔ No minimum capital required</li>
               <li>✔ GST optional till threshold</li>
-              <li>✔ Lifetime validity with annual compliance</li>
+              <li>✔ Best for startups & freelancers</li>
             </ul>
           </div>
 

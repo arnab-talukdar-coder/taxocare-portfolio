@@ -9,9 +9,7 @@ const ConsultationForm = forwardRef((props, ref) => {
       ([entry]) => {
         setVisible(entry.isIntersecting);
       },
-      {
-        threshold: 0.3, // trigger when 30% visible
-      }
+      { threshold: 0.6 }
     );
 
     if (localRef.current) observer.observe(localRef.current);
@@ -19,17 +17,22 @@ const ConsultationForm = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <div
+    <div id = "home From"
       ref={(node) => {
         localRef.current = node;
         if (ref) ref.current = node;
       }}
       className={`
-        w-full max-w-md bg-white rounded-lg shadow-lg px-5 py-4
+        w-full max-w-md bg-white rounded-xl
+        shadow-[0_25px_60px_-15px_rgba(15,23,42,0.35)]
+        hover:shadow-[0_35px_90px_-20px_rgba(15,23,42,0.45)]
+        px-5 py-4
         transform transition-all duration-700 ease-out
-        ${visible
-          ? "opacity-100 translate-y-0 scale-100"
-          : "opacity-0 translate-y-8 scale-95"}
+        ${
+          visible
+            ? "opacity-100 translate-y-0 scale-100"
+            : "opacity-0 translate-y-8 scale-95"
+        }
       `}
     >
       <h2 className="text-center text-base font-semibold mb-4">
@@ -44,7 +47,8 @@ const ConsultationForm = forwardRef((props, ref) => {
           </label>
           <input
             required
-            className="w-full border rounded-md px-3 py-1.5 focus:ring-2 focus:ring-blue-500"
+            className="w-full border rounded-md px-3 py-1.5
+              focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Full name"
           />
         </div>
@@ -57,7 +61,8 @@ const ConsultationForm = forwardRef((props, ref) => {
           <input
             type="email"
             required
-            className="w-full border rounded-md px-3 py-1.5 focus:ring-2 focus:ring-blue-500"
+            className="w-full border rounded-md px-3 py-1.5
+              focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Email address"
           />
         </div>
@@ -69,7 +74,8 @@ const ConsultationForm = forwardRef((props, ref) => {
           </label>
           <input
             required
-            className="w-full border rounded-md px-3 py-1.5 focus:ring-2 focus:ring-blue-500"
+            className="w-full border rounded-md px-3 py-1.5
+              focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Mobile number"
           />
         </div>
@@ -100,12 +106,11 @@ const ConsultationForm = forwardRef((props, ref) => {
 
         {/* QUERY */}
         <div>
-          <label className="block font-medium mb-1">
-            Query
-          </label>
+          <label className="block font-medium mb-1">Query</label>
           <textarea
             rows="2"
-            className="w-full border rounded-md px-3 py-1.5 focus:ring-2 focus:ring-blue-500"
+            className="w-full border rounded-md px-3 py-1.5
+              focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Your query (optional)"
           />
         </div>
@@ -113,7 +118,8 @@ const ConsultationForm = forwardRef((props, ref) => {
         {/* SUBMIT */}
         <button
           type="submit"
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-md transition"
+          className="w-full bg-blue-600 hover:bg-blue-700
+            text-white font-semibold py-2 rounded-md transition"
         >
           SUBMIT
         </button>

@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import ConsultationForm from "../ConsultationForm";
 
-export default function LLPRegistration() {
+export default function PartnershipRegistration() {
   const formRef = useRef(null);
 
   return (
@@ -12,21 +12,22 @@ export default function LLPRegistration() {
         <div className="max-w-6xl mx-auto px-6">
 
           <h2 className="text-2xl font-semibold mb-4">
-            What is LLP?
+            What is a Partnership Firm?
           </h2>
           <p className="text-slate-600 leading-relaxed mb-10">
-            LLP (Limited Liability Partnership) is a business structure governed
-            by the LLP Act, 2008. It combines the benefits of a partnership firm
-            with limited liability protection for partners.
+            A Partnership Firm is a business structure where two or more persons
+            agree to carry on a business and share profits as per the Partnership
+            Deed. It is governed by the Indian Partnership Act, 1932.
           </p>
 
           <h2 className="text-2xl font-semibold mb-4">
-            What is LLP Registration?
+            What is Partnership Firm Registration?
           </h2>
           <p className="text-slate-600 leading-relaxed">
-            LLP Registration is the legal process of forming a Limited Liability
-            Partnership under MCA. Once registered, LLP can open a current bank
-            account and operate as a separate legal entity.
+            Partnership Firm Registration is the process of legally registering
+            a partnership with the Registrar of Firms. Though registration is
+            optional, a registered partnership enjoys better legal recognition
+            and rights.
           </p>
 
         </div>
@@ -37,19 +38,18 @@ export default function LLPRegistration() {
         <div className="max-w-6xl mx-auto px-6">
 
           <h2 className="text-3xl font-semibold mb-6">
-            LLP Registration Fees
+            Partnership Firm Registration Fees
           </h2>
 
           <p className="mb-4">
-            Pricing: <strong>₹8,999/- INR</strong> (Exclude GST | GST Credit Available)
+            Pricing: <strong>₹4,999/- INR</strong> (Exclude GST | GST Extra if Applicable)
           </p>
 
           <ul className="space-y-2 mb-8">
-            <li>✓ 2 Partners DIN + DSC</li>
-            <li>✓ Name Approval of LLP</li>
-            <li>✓ LLP Agreement Drafting</li>
-            <li>✓ Certificate of Incorporation</li>
-            <li>✓ PAN & TAN</li>
+            <li>✓ Drafting of Partnership Deed</li>
+            <li>✓ PAN of Partnership Firm</li>
+            <li>✓ Registration with Registrar of Firms</li>
+            <li>✓ Bank Account Assistance</li>
             <li>✓ MSME Registration (Free)</li>
           </ul>
 
@@ -68,97 +68,97 @@ export default function LLPRegistration() {
       {/* ================= FORM SECTION ================= */}
       {/* <ConsultationForm ref={formRef} /> */}
 
-      {/* ================= COMPLETE LLP CONTENT ================= */}
+      {/* ================= COMPLETE CONTENT ================= */}
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6 space-y-24 text-slate-700 leading-relaxed">
 
           {/* INTRO */}
           <div>
             <h2 className="text-2xl font-semibold mb-4">
-              LLP Registration Online
+              Partnership Firm Registration Online
             </h2>
             <p>
-              LLP Registration can be completed through the MCA portal, but it
-              requires Digital Signature attestation from a Chartered
-              Accountant, Company Secretary, or Lawyer. Hence, professional
-              assistance is mandatory for LLP incorporation in India.
+              Partnership Firm Registration can be completed online with the help
+              of legal professionals. A properly drafted partnership deed is the
+              backbone of the firm and defines rights, duties, and profit-sharing
+              ratios of partners.
             </p>
           </div>
 
           {/* PROCESS */}
           <div>
             <h2 className="text-2xl font-semibold mb-4">
-              LLP Registration Process
+              Partnership Firm Registration Process
             </h2>
             <ol className="list-decimal ml-6 space-y-3">
-              <li>Apply for Digital Signature Certificate (DSC).</li>
-              <li>Apply for Designated Partner Identification Number (DPIN).</li>
-              <li>Check LLP name availability on MCA portal.</li>
-              <li>File FiLLiP Form for LLP incorporation.</li>
-              <li>Draft and file LLP Agreement.</li>
+              <li>Choose a unique partnership firm name.</li>
+              <li>Draft the Partnership Deed.</li>
+              <li>Execute deed on stamp paper.</li>
+              <li>Apply for PAN of the firm.</li>
+              <li>Register with Registrar of Firms.</li>
             </ol>
           </div>
 
           {/* DOCUMENTS */}
           <div>
             <h2 className="text-2xl font-semibold mb-4">
-              Documents Required for LLP Registration
+              Documents Required for Partnership Registration
             </h2>
 
             <h4 className="font-semibold mt-4 mb-2">
               Partners’ Documents
             </h4>
             <ul className="list-disc ml-6 space-y-2">
-              <li>PAN Card of Partners</li>
-              <li>Aadhaar / Passport / Driving License</li>
-              <li>Passport size photograph</li>
+              <li>PAN Card of all partners</li>
+              <li>Aadhaar / Passport / Voter ID</li>
+              <li>Passport size photographs</li>
             </ul>
 
             <h4 className="font-semibold mt-6 mb-2">
               Business Address Proof
             </h4>
             <ul className="list-disc ml-6 space-y-2">
-              <li>Electricity Bill + Rent Agreement / NOC / Sale Deed</li>
+              <li>Electricity Bill / Rent Agreement / NOC</li>
             </ul>
           </div>
 
           {/* BENEFITS */}
           <div>
             <h2 className="text-2xl font-semibold mb-4">
-              Benefits of LLP Registration
+              Benefits of Partnership Firm Registration
             </h2>
             <ul className="list-disc ml-6 space-y-2">
-              <li>Limited liability protection for partners</li>
-              <li>No minimum capital requirement</li>
-              <li>Lower compliance compared to companies</li>
-              <li>Separate legal entity</li>
-              <li>Suitable for professionals & startups</li>
+              <li>Easy to start and manage</li>
+              <li>Minimal compliance requirements</li>
+              <li>Cost-effective business structure</li>
+              <li>Flexible profit sharing</li>
+              <li>Ideal for small businesses</li>
             </ul>
           </div>
 
           {/* TIME */}
           <div>
             <h2 className="text-2xl font-semibold mb-4">
-              Time Required for LLP Registration
+              Time Required for Partnership Registration
             </h2>
             <p>
-              LLP Registration generally takes
-              <strong> 7–12 working days</strong>, depending on document
-              verification and MCA approval.
+              Partnership Firm Registration usually takes
+              <strong> 5–8 working days</strong>, subject to document verification
+              and state-wise procedures.
             </p>
           </div>
 
           {/* FAQ */}
           <div>
             <h2 className="text-2xl font-semibold mb-6">
-              FAQ on LLP Registration
+              FAQ on Partnership Firm Registration
             </h2>
             <ul className="space-y-2">
               <li>✔ Minimum 2 partners required</li>
-              <li>✔ Residential address allowed</li>
+              <li>✔ Registration is optional but recommended</li>
               <li>✔ No minimum capital required</li>
-              <li>✔ GST optional till threshold</li>
-              <li>✔ Lifetime validity with annual compliance</li>
+              <li>✔ Suitable for small & family businesses</li>
+              <li>✔ GST applicable only after threshold</li>
             </ul>
           </div>
 
