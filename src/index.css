@@ -68,3 +68,25 @@ nav {
 .nav-link:hover::after {
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 80px; /* mobile navbar height */
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  /* Example: hide underline animation on mobile */
+  .nav-link::after {
+    display: none;
+  }
+}
+
+/* ---------- SMALL MOBILE ---------- */
+@media (max-width: 480px) {
+  body {
+    padding-top: 90px;
+  }
+}
