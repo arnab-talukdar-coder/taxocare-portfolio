@@ -39,7 +39,7 @@ export default function Navbar() {
               <a href="/#about" className="nav-link">
                 About Us
               </a>
-              <a href="/#service" className="nav-link">
+              <a href="/#footer" className="nav-link">
                 Service
               </a>
               <Link to="/contact" className="nav-link">
