@@ -1,52 +1,52 @@
-import { useRef } from "react";
-import ConsultationForm from "../ConsultationForm";
+
+
 
 export default function IECRegistration() {
-  const formRef = useRef(null);
+
 
   return (
-    <div className="bg-white">
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl font-semibold mb-4">What is IEC Code?</h2>
-          <p className="text-slate-600 mb-10">
-            IEC (Import Export Code) is a mandatory registration for businesses
-            involved in import or export in India.
-          </p>
+    <div className="bg-slate-100">
 
-          <h2 className="text-2xl font-semibold mb-4">
-            What is IEC Registration?
-          </h2>
-          <p className="text-slate-600">
-            IEC Registration allows businesses to legally trade internationally.
+      {/* HERO */}
+      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h1 className="text-4xl font-bold mb-4">
+            IEC Code Registration
+          </h1>
+          <p className="text-blue-100 max-w-3xl mx-auto">
+            Start your import-export business legally with IEC registration.
           </p>
         </div>
       </section>
 
-      <section className="bg-blue-700 text-white py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-semibold mb-6">
-            IEC Code Registration Fees
-          </h2>
-          <p className="mb-4">
-            Pricing: <strong>₹2,999/- INR</strong>
-          </p>
-          <ul className="space-y-2 mb-8">
-            <li>✓ DGFT Registration</li>
-            <li>✓ Lifetime Validity</li>
-            <li>✓ Export–Import Eligibility</li>
-          </ul>
+      {/* CONTENT */}
+      <section className="py-16">
+        <div className="max-w-5xl mx-auto px-6 space-y-12">
 
-          <button
-            onClick={() => formRef.current?.scrollIntoView({ behavior: "smooth" })}
-            className="bg-orange-500 px-6 py-3 rounded-md font-semibold"
-          >
-            BOOK NOW
-          </button>
+          <div className="bg-white p-10 rounded-2xl shadow-sm">
+            <h2 className="text-2xl font-semibold mb-4 text-blue-900">
+              What is IEC Code?
+            </h2>
+            <p className="text-slate-600 leading-relaxed">
+              IEC (Import Export Code) is a mandatory 10-digit code issued by
+              DGFT required for businesses engaged in international trade.
+            </p>
+          </div>
+
+          <div className="bg-white p-10 rounded-2xl shadow-sm">
+            <h2 className="text-2xl font-semibold mb-6 text-blue-900">
+              Benefits of IEC Registration
+            </h2>
+            <ul className="list-disc ml-6 space-y-2 text-slate-700">
+              <li>Global trade eligibility</li>
+              <li>Access to export incentives</li>
+              <li>Lifetime validity</li>
+              <li>No return filing required</li>
+            </ul>
+          </div>
+
         </div>
       </section>
-
-      {/* <ConsultationForm ref={formRef} /> */}
     </div>
   );
 }

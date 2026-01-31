@@ -29,10 +29,10 @@ import WhatsAppButton from "./Components/WhatsAppButton";
 import ContactUs from "./Components/ContactUs";
 
 function AppLayout() {
-  const location = useLocation();
+  
 
   // ✅ show WhatsApp only on Home page
-  const showWhatsApp = location.pathname === "/";
+  const showWhatsApp = true;
 
   return (
     <>

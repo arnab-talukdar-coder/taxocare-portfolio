@@ -1,52 +1,51 @@
-import { useRef } from "react";
-import ConsultationForm from "../ConsultationForm";
+
+
 
 export default function FSSAIRegistration() {
-  const formRef = useRef(null);
+
 
   return (
-    <div className="bg-white">
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl font-semibold mb-4">What is FSSAI?</h2>
-          <p className="text-slate-600 mb-10">
-            FSSAI Registration is mandatory for businesses involved in food
-            manufacturing, storage, distribution, or sale.
-          </p>
+    <div className="bg-slate-100">
 
-          <h2 className="text-2xl font-semibold mb-4">
-            What is FSSAI Registration?
-          </h2>
-          <p className="text-slate-600">
-            FSSAI Registration provides a 14-digit license number issued by FSSAI.
+      {/* HERO */}
+      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h1 className="text-4xl font-bold mb-4">
+            FSSAI Registration
+          </h1>
+          <p className="text-blue-100 max-w-3xl mx-auto">
+            Obtain your FSSAI license and run your food business legally.
           </p>
         </div>
       </section>
 
-      <section className="bg-blue-700 text-white py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-semibold mb-6">
-            FSSAI Registration Fees
-          </h2>
-          <p className="mb-4">
-            Pricing: <strong>₹2,499/- INR</strong>
-          </p>
-          <ul className="space-y-2 mb-8">
-            <li>✓ Basic / State / Central License</li>
-            <li>✓ Food Business Compliance</li>
-            <li>✓ Legal Authorization</li>
-          </ul>
+      {/* CONTENT */}
+      <section className="py-16">
+        <div className="max-w-5xl mx-auto px-6 space-y-12">
 
-          <button
-            onClick={() => formRef.current?.scrollIntoView({ behavior: "smooth" })}
-            className="bg-orange-500 px-6 py-3 rounded-md font-semibold"
-          >
-            BOOK NOW
-          </button>
+          <div className="bg-white p-10 rounded-2xl shadow-sm">
+            <h2 className="text-2xl font-semibold mb-4 text-blue-900">
+              What is FSSAI?
+            </h2>
+            <p className="text-slate-600 leading-relaxed">
+              FSSAI Registration is mandatory for food-related businesses to ensure
+              food safety and compliance under the Food Safety Act.
+            </p>
+          </div>
+
+          <div className="bg-white p-10 rounded-2xl shadow-sm">
+            <h2 className="text-2xl font-semibold mb-6 text-blue-900">
+              Types of FSSAI License
+            </h2>
+            <ul className="list-disc ml-6 space-y-2 text-slate-700">
+              <li>Basic Registration</li>
+              <li>State License</li>
+              <li>Central License</li>
+            </ul>
+          </div>
+
         </div>
       </section>
-
-      {/* <ConsultationForm ref={formRef} /> */}
     </div>
   );
 }
