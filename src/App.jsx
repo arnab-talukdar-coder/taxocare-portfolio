@@ -1,9 +1,9 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import PvtLtdRegistration from "./Components/PvtLtdRegistration";
 import OPCRegistration from "./Components/OPCRegistration";
 import LLPRegistration from "./Components/LLPRegistration";
-import PartnershipRegistration from "./Components/PartnerShipRegistration";
+import PartnershipRegistration from "./Components/PartnershipRegistration";
 import ProprietorshipRegistration from "./Components/ProprietorshipRegistration";
 
 import MSMERegistration from "./Components/MSMERegistration";
