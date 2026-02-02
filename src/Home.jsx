@@ -42,7 +42,8 @@ export default function App() {
       {/* ================= TOP BAR ================= */}
 
       {/* ================= HERO ================= */}
-      <section className="relative min-h-[20vh] overflow-visible">
+    <section className="relative overflow-hidden">
+
         {/* ================= HERO IMAGE CAROUSEL ================= */}
         {heroImages.map((img, index) => (
           <div
@@ -62,7 +63,7 @@ export default function App() {
         <div
           className="
       relative z-20 max-w-7xl mx-auto px-6
-      pt-32 pb-16
+      pt-20 pb-20
       grid grid-cols-1 lg:grid-cols-2 gap-20
       items-start
     "
@@ -98,13 +99,7 @@ export default function App() {
           </div>
 
           {/* ================= RIGHT FORM ================= */}
-          <div
-            className="relative
-    z-30
-    lg:translate-x-[250px]
-    translate-y-[20px]
-    lg:translate-y-[-70px]"
-          >
+          <div className="relative z-30 w-full max-w-md mx-auto lg:mx-0">
             <ConsultationForm />
           </div>
         </div>

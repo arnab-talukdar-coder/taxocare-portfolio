@@ -19,7 +19,7 @@ const ConsultationForm = forwardRef((props, ref) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => setVisible(entry.isIntersecting),
-      { threshold: 0.6 }
+      { threshold: 0.6 },
     );
 
     if (localRef.current) observer.observe(localRef.current);
@@ -35,23 +35,17 @@ const ConsultationForm = forwardRef((props, ref) => {
       const formData = new FormData(formRef.current);
       const category = formData.get("category") || "Not selected";
 
-      await emailjs.send(
-        "YOUR_SERVICE_ID_HERE",
-        "YOUR_TEMPLATE_ID_HERE",
-        {
-          to_email: "consultant@email.com",
-          from_name: formData.get("name"),
-          from_email: formData.get("email"),
-          phone: formData.get("phone"),
-          category: category,
-          message: formData.get("query"),
-        }
-      );
+      await emailjs.send("service_4n6496u", "template_adpeanw", {
+        from_name: formData.get("name"),
+        from_email: formData.get("email"),
+        phone: formData.get("phone"),
+        category: category,
+        message: formData.get("query"),
+      });
 
       // ✅ SUCCESS
       setMessage("✅ Consultation request sent successfully!");
       setSubmitted(true); // hide form
-
     } catch (error) {
       console.error("Email error:", error);
       setMessage("❌ Failed to send. Please try again.");

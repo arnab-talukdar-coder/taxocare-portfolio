@@ -3,7 +3,7 @@ import Home from "./Home";
 import PvtLtdRegistration from "./Components/PvtLtdRegistration";
 import OPCRegistration from "./Components/OPCRegistration";
 import LLPRegistration from "./Components/LLPRegistration";
-import PartnerShipRegistration from "./Components/PartnerShipRegistration";
+import PartnershipRegistration from "./Components/PartnerShipRegistration";
 import ProprietorshipRegistration from "./Components/ProprietorshipRegistration";
 
 import MSMERegistration from "./Components/MSMERegistration";
@@ -21,6 +21,8 @@ import ITRReturnFiling from "./Components/ITRReturnFiling";
 
 import TrademarkRegistration from "./Components/TrademarkRegistration";
 import PatentRegistration from "./Components/PatentRegistration";
+import TermsOfUse from "./Components/TermsOfUse";
+import PrivacyPolicy from "./Components/PrivacyPolicy";
 
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
@@ -50,7 +52,7 @@ function AppLayout() {
         <Route path="/llp-registration" element={<LLPRegistration />} />
         <Route
           path="/partnership-registration"
-          element={<PartnerShipRegistration />}
+          element={<PartnershipRegistration />}
         />
         <Route
           path="/proprietorship-registration"
@@ -74,6 +76,8 @@ function AppLayout() {
           element={<TrademarkRegistration />}
         />
         <Route path="/patent-registration" element={<PatentRegistration />} />
+        <Route path="/terms-of-use" element={<TermsOfUse />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
 

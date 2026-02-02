@@ -25,7 +25,7 @@ export default function ContactUs() {
               📞 <strong>Phone:</strong> (+91) 9883804092
             </p>
             <p>
-              ✉️ <strong>Email:</strong> consultant@email.com
+              ✉️ <strong>Email:</strong> office@taxocare.in
             </p>
           </div>
         </div>
