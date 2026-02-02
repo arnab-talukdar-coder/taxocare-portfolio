@@ -87,6 +87,6 @@ nav {
 /* ---------- SMALL MOBILE ---------- */
 @media (max-width: 480px) {
   body {
-    padding-top: 90px;
+    padding-top: 60px;
   }
 }

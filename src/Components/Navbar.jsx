@@ -10,7 +10,7 @@ export default function Navbar() {
 
         {/* TOP BAR */}
         <div className="bg-slate-900 text-slate-200 text-sm">
-          <div className="max-w-[1560px] mx-auto px-8 py-2 flex justify-end gap-6">
+          <div className="max-w-[1560px] mx-auto px- py-4 flex justify-between items-center">
             <span>📍Barasat, Kolkata</span>
             <span>📞 (+91) 9883804092</span>
           </div>
@@ -18,7 +18,7 @@ export default function Navbar() {
 
         {/* NAVBAR */}
         <nav className="bg-white shadow-[0_4px_20px_-6px_rgba(0,0,0,0.15)]">
-          <div className="max-w-[1560px] mx-auto px-8 py-4 flex justify-between items-center">
+          <div className="max-w-[1560px] mx-auto px- py-4 flex justify-between items-center">
 
             {/* LOGO */}
             <Link
