@@ -99,7 +99,7 @@ export default function App() {
           </div>
 
           {/* ================= RIGHT FORM ================= */}
-          <div className="relative z-30 w-full max-w-md mx-auto lg:mx-0">
+          <div className="relative z-30 w-full max-w-md mx-auto lg:mx-55">
             <ConsultationForm />
           </div>
         </div>

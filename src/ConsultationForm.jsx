@@ -26,6 +26,17 @@ const ConsultationForm = forwardRef((props, ref) => {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    if (submitted) {
+      const timer = setTimeout(() => {
+        setSubmitted(false);
+        setMessage("");
+      }, 2000); // 8 seconds
+  
+      return () => clearTimeout(timer);
+    }
+  }, [submitted]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -45,7 +56,8 @@ const ConsultationForm = forwardRef((props, ref) => {
 
       // ✅ SUCCESS
       setMessage("✅ Consultation request sent successfully!");
-      setSubmitted(true); // hide form
+      setSubmitted(true);
+     // setVisible(false) // hide form
     } catch (error) {
       console.error("Email error:", error);
       setMessage("❌ Failed to send. Please try again.");
@@ -53,6 +65,7 @@ const ConsultationForm = forwardRef((props, ref) => {
       setLoading(false);
     }
   };
+
 
   return (
     <div
