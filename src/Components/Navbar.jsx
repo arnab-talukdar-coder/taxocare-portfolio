@@ -18,7 +18,7 @@ export default function Navbar() {
 
         {/* NAVBAR */}
         <nav className="bg-white shadow-[0_4px_20px_-6px_rgba(0,0,0,0.15)]">
-          <div className="max-w-[1560px] mx-auto px- py-4 flex justify-between items-center">
+          <div className="max-w-[1560px] mx-auto px-8 py-4 flex justify-between items-center">
 
             {/* LOGO */}
             <Link
@@ -45,7 +45,7 @@ export default function Navbar() {
 
             {/* DESKTOP CTA */}
             <a
-              href="/#homeForm"
+              href="/#home From"
               className="hidden lg:inline-block
                 bg-blue-600 hover:bg-blue-700
                 text-white px-6 py-2
@@ -78,7 +78,7 @@ export default function Navbar() {
                 <Link to="/contact" onClick={() => setIsOpen(false)}>Contact Us</Link>
 
                 <a
-                  href="/#homeForm"
+                  href="/#home From"
                   onClick={() => setIsOpen(false)}
                   className="bg-blue-600 text-white px-5 py-2 rounded-lg text-center"
                 >
